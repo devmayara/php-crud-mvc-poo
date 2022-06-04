@@ -13,6 +13,6 @@ class clientsController{
     function getAll()
     {
         $resultData = $this->model->getAll();
-        print_r($resultData);
+        require_once('./views/index.php');
     }
 }
