@@ -9,4 +9,10 @@ class clientsController{
     {
         $this->model = new ClientModel();
     }
+
+    function getAll()
+    {
+        $resultData = $this->model->getAll();
+        print_r($resultData);
+    }
 }
